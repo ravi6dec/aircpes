@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AIR-CPES 2027 — AI for Resilient Cyber-Physical Energy Systems | March 8–9, 2027</title>
+<meta name="description" content="AIR-CPES 2027: 1st International Conference on Artificial Intelligence for Resilient Cyber-Physical Energy Systems. March 8–9, 2027 at MAIT Delhi, India and Birmingham City University, UK. Proceedings in Springer LNEE. Paper submission deadline: January 10, 2027.">
+<meta name="keywords" content="AIR-CPES 2027, conference, artificial intelligence, cyber-physical energy systems, smart grid, microgrid, cybersecurity, battery management, electric vehicles, Springer LNEE, MAIT Delhi, Birmingham City University">
+<meta name="theme-color" content="#16235C">
+<link rel="canonical" href="https://www.aircpes.in/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.aircpes.in/">
+<meta property="og:title" content="AIR-CPES 2027 — AI for Resilient Cyber-Physical Energy Systems">
+<meta property="og:description" content="1st International Conference · March 8–9, 2027 · MAIT Delhi, India & Birmingham City University, UK · Springer LNEE proceedings.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316235C'/%3E%3Cpath d='M36 8 18 36h12l-4 20 20-30H34z' fill='%236F8BFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "AIR-CPES 2027 — 1st International Conference on Artificial Intelligence for Resilient Cyber-Physical Energy Systems",
+  "startDate": "2027-03-08",
+  "endDate": "2027-03-09",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "url": "https://www.aircpes.in/",
+  "location": [
+    {"@type": "Place", "name": "Maharaja Agrasen Institute of Technology (MAIT)", "address": {"@type": "PostalAddress", "streetAddress": "Sector 22, PSP Area, Rohini", "addressLocality": "Delhi", "addressCountry": "IN"}},
+    {"@type": "Place", "name": "Birmingham City University, Millennium Point", "address": {"@type": "PostalAddress", "streetAddress": "Curzon St", "addressLocality": "Birmingham", "postalCode": "B4 7AP", "addressCountry": "GB"}}
+  ],
+  "organizer": [
+    {"@type": "Organization", "name": "Maharaja Agrasen Institute of Technology, Delhi"},
+    {"@type": "Organization", "name": "Birmingham City University, UK"}
+  ]
+}
+</script>
+<style>
+:root {
+  --ink: #16235C; --ink-2: #1D2C73; --paper: #F7F5F1; --paper-2: #EFEBE3; --card: #FFFFFF;
+  --line: #D8D2C4; --line-dark: #32448F; --accent: #3454D1; --accent-on-ink: #8EA4FF;
+  --text: #12181F; --text-dim: #545E69; --text-on-ink: #EDEAE2; --text-on-ink-dim: #A7B0BB;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper: #10151C; --paper-2: #171F29; --card: #1B242F; --text: #EDEAE2; --text-dim: #A2ACB7; --line: #2E3A47; --accent: #7F97FF; }
+}
+:root[data-theme="dark"] { --paper: #10151C; --paper-2: #171F29; --card: #1B242F; --text: #EDEAE2; --text-dim: #A2ACB7; --line: #2E3A47; --accent: #7F97FF; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--text); font-family: 'IBM Plex Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.5; }
+h1, h2, h3, h4 { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.01em; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent-on-ink); outline-offset: 3px; }
+.skip { position: absolute; left: -999px; top: 8px; background: #fff; color: #000; padding: 8px 12px; z-index: 100; }
+.skip:focus { left: 8px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.prose { max-width: 680px; }
+
+/* Header */
+header.site { position: sticky; top: 0; z-index: 50; background: rgba(22,35,92,0.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line-dark); padding-top: env(safe-area-inset-top, 0px); }
+header.site .bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 24px; max-width: 1120px; margin: 0 auto; }
+.mark { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--text-on-ink); font-size: 1.08rem; text-decoration: none; flex: none; display: flex; align-items: center; gap: 8px; }
+.mark svg { width: 22px; height: 22px; }
+.mark span { color: var(--accent-on-ink); }
+nav.primary { display: flex; gap: 18px; align-items: center; }
+nav.primary a { color: var(--text-on-ink-dim); text-decoration: none; font-size: 0.84rem; white-space: nowrap; padding: 6px 0; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; }
+nav.primary a:hover, nav.primary a.active { color: var(--text-on-ink); border-color: var(--accent-on-ink); }
+.menu-btn { display: none; background: none; border: 1px solid var(--line-dark); color: var(--text-on-ink); padding: 7px 12px; font: inherit; font-size: 0.85rem; cursor: pointer; }
+@media (max-width: 1020px) {
+  .menu-btn { display: block; }
+  nav.primary { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 0; background: var(--ink); border-bottom: 1px solid var(--line-dark); padding: 6px 24px 14px; }
+  nav.primary.open { display: flex; }
+  nav.primary a { padding: 11px 0; border-bottom: 1px solid var(--line-dark); font-size: 0.95rem; }
+  nav.primary a:last-child { border-bottom: none; }
+}
+
+section { padding: 72px 0; }
+.on-ink { background: var(--ink); color: var(--text-on-ink); }
+.tint { background: var(--paper-2); }
+
+/* Hero */
+.hero { padding: 96px 0 88px; position: relative; overflow: hidden; }
+.hero .grid-bg { position: absolute; inset: 0; opacity: .14; pointer-events: none;
+  background-image: linear-gradient(var(--line-dark) 1px, transparent 1px), linear-gradient(90deg, var(--line-dark) 1px, transparent 1px);
+  background-size: 48px 48px; mask-image: radial-gradient(ellipse at 80% 30%, #000 0%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at 80% 30%, #000 0%, transparent 70%); }
+.hero .wrap { position: relative; }
+.badge { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-on-ink); font-size: 0.86rem; font-weight: 500; margin: 0 0 18px; border: 1px solid var(--line-dark); padding: 6px 12px; }
+.badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent-on-ink); }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.08; margin: 0 0 20px; max-width: 860px; }
+.hero h1 em { font-style: normal; color: var(--accent-on-ink); }
+.hero p.lede { font-size: 1.06rem; color: var(--text-on-ink-dim); max-width: 680px; margin: 0 0 32px; line-height: 1.6; }
+.hero-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--line-dark); border: 1px solid var(--line-dark); max-width: 860px; margin-bottom: 34px; }
+.hero-facts div { background: var(--ink); padding: 14px 18px; }
+.hero-facts .k { display: block; font-size: 0.74rem; color: var(--text-on-ink-dim); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 4px; }
+.hero-facts .v { font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 1rem; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+.btn { display: inline-block; padding: 13px 24px; text-decoration: none; font-size: 0.9rem; font-weight: 500; border: 1px solid #3454D1; transition: transform .15s, background .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn.solid { background: #3454D1; color: #F4F6FF; }
+.btn.solid:hover { background: #2A47BF; }
+.btn.ghost { color: var(--text-on-ink); border-color: var(--line-dark); }
+.btn.ghost:hover { border-color: var(--accent-on-ink); }
+
+/* Countdown */
+.countdown { display: flex; gap: 10px; align-items: center; margin-top: 30px; color: var(--text-on-ink-dim); font-size: 0.86rem; flex-wrap: wrap; }
+.countdown .cells { display: flex; gap: 8px; }
+.countdown .cell { min-width: 58px; text-align: center; border: 1px solid var(--line-dark); padding: 6px 8px; }
+.countdown .cell b { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; color: var(--text-on-ink); font-weight: 500; }
+.countdown .cell small { font-size: 0.68rem; text-transform: uppercase; letter-spacing: .05em; }
+
+.eyebrow { color: var(--accent); font-size: 0.8rem; font-weight: 600; margin: 0 0 10px; text-transform: uppercase; letter-spacing: .08em; }
+.on-ink .eyebrow { color: var(--accent-on-ink); }
+h2.sec-title { font-size: clamp(1.45rem, 2.8vw, 2.05rem); margin: 0 0 18px; line-height: 1.2; }
+p.body-text { color: var(--text-dim); line-height: 1.7; font-size: 0.98rem; margin: 0 0 14px; }
+.sec-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; }
+.count { font-size: 0.84rem; color: var(--text-dim); }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 28px; } }
+.vol-card { background: var(--card); border: 1px solid var(--line); padding: 22px; margin-bottom: 14px; }
+.vol-card .tag { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.78rem; color: var(--accent); }
+.vol-card h3 { font-size: 1.02rem; margin: 6px 0 8px; }
+.vol-card p { margin: 0; color: var(--text-dim); font-size: 0.88rem; line-height: 1.55; }
+
+/* Topics */
+.topic-list { columns: 2; column-gap: 40px; margin: 26px 0 0; padding: 0; list-style: none; max-width: 900px; }
+.topic-list li { font-size: 0.94rem; padding: 9px 0 9px 20px; border-bottom: 1px solid var(--line); position: relative; break-inside: avoid; }
+.topic-list li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
+
+/* Tracks */
+.track-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 30px; }
+.track { background: var(--card); border: 1px solid var(--line); padding: 22px 20px; display: flex; flex-direction: column; transition: border-color .15s, transform .15s; }
+.track:hover { border-color: var(--accent); transform: translateY(-2px); }
+.track .num { font-family: 'Space Grotesk', sans-serif; font-size: 0.76rem; color: var(--accent); font-weight: 700; letter-spacing: .05em; }
+.track h3 { font-size: 1rem; margin: 8px 0 10px; line-height: 1.3; }
+.track p { color: var(--text-dim); font-size: 0.84rem; line-height: 1.55; margin: 0; }
+.track details { margin-top: 10px; }
+.track summary { cursor: pointer; font-size: 0.8rem; color: var(--accent); font-weight: 500; list-style: none; }
+.track summary::-webkit-details-marker { display: none; }
+.track summary::after { content: " +"; }
+.track details[open] summary::after { content: " −"; }
+.track details p { margin-top: 8px; }
+
+/* Timeline */
+.timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-top: 40px; position: relative; }
+.timeline::before { content: ""; position: absolute; left: 0; right: 0; top: 6px; height: 1px; background: var(--line-dark); }
+.tl-item { position: relative; padding: 26px 16px 0 0; }
+.tl-item::before { content: ""; position: absolute; left: 0; top: 1px; width: 11px; height: 11px; border-radius: 50%; background: var(--ink); border: 2px solid var(--accent-on-ink); }
+.tl-item.past::before { background: var(--accent-on-ink); }
+.tl-item.hl::before { background: var(--accent-on-ink); box-shadow: 0 0 0 5px rgba(142,164,255,.2); }
+.tl-item .date { font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 1.02rem; }
+.tl-item .label { color: var(--text-on-ink-dim); font-size: 0.88rem; margin-top: 4px; }
+.tl-item.hl .date { color: var(--accent-on-ink); }
+.tl-item .when { display: inline-block; margin-top: 8px; font-size: 0.72rem; color: var(--accent-on-ink); border: 1px solid var(--line-dark); padding: 2px 7px; }
+@media (max-width: 820px) {
+  .timeline { grid-template-columns: 1fr; padding-left: 28px; }
+  .timeline::before { left: 5px; right: auto; top: 0; bottom: 0; width: 1px; height: auto; }
+  .tl-item { padding: 0 0 26px; }
+  .tl-item::before { left: -28px; top: 4px; }
+}
+
+/* Review */
+.pub-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; margin-top: 26px; align-items: start; }
+@media (max-width: 820px) { .pub-grid { grid-template-columns: 1fr; gap: 28px; } }
+.policy-list { margin: 0; padding: 0; list-style: none; }
+.policy-list li { font-size: 0.9rem; color: var(--text-dim); padding: 10px 0 10px 26px; border-bottom: 1px solid var(--line); position: relative; }
+.policy-list li::before { content: "✓"; position: absolute; left: 2px; color: var(--accent); font-weight: 600; }
+.callout { border-left: 3px solid var(--accent); background: var(--card); padding: 16px 18px; margin-top: 18px; font-size: 0.9rem; color: var(--text-dim); }
+.callout b { color: var(--text); }
+
+/* Committee */
+.committee-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 30px; }
+.committee-grid > div { background: var(--card); border: 1px solid var(--line); padding: 18px 18px 14px; }
+.committee-grid .role { font-size: 0.74rem; color: var(--accent); font-weight: 600; margin: 0 0 10px; text-transform: uppercase; letter-spacing: .06em; }
+.committee-grid .names { margin: 0; padding: 0; list-style: none; font-size: 0.9rem; line-height: 1.45; }
+.committee-grid .names li { margin-bottom: 9px; font-weight: 500; }
+.committee-grid .names li span { display: block; color: var(--text-dim); font-size: 0.78rem; font-weight: 400; }
+
+/* Name grids */
+.filter { width: 100%; max-width: 360px; padding: 10px 14px; border: 1px solid var(--line); background: var(--card); color: var(--text); font: inherit; font-size: 0.9rem; }
+.filter:focus { outline: none; border-color: var(--accent); }
+.name-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 24px; }
+.name-grid .np { background: var(--card); padding: 11px 14px; font-size: 0.85rem; }
+.name-grid .np b { display: block; font-weight: 500; }
+.name-grid .np span { display: block; color: var(--text-dim); font-size: 0.77rem; margin-top: 2px; }
+.name-grid .np[hidden] { display: none; }
+.collapsible { position: relative; max-height: 520px; overflow: hidden; }
+.collapsible.expanded { max-height: none; }
+.collapsible:not(.expanded)::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(transparent, var(--paper)); pointer-events: none; }
+.tint .collapsible:not(.expanded)::after { background: linear-gradient(transparent, var(--paper-2)); }
+.more-btn { margin-top: 16px; background: none; border: 1px solid var(--line); color: var(--text); padding: 10px 18px; font: inherit; font-size: 0.86rem; cursor: pointer; }
+.more-btn:hover { border-color: var(--accent); color: var(--accent); }
+.no-match { color: var(--text-dim); font-size: 0.9rem; margin-top: 16px; display: none; }
+
+/* Publication */
+.stat-list { border-top: 1px solid var(--line); }
+.stat-row { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 0.9rem; }
+.stat-row .k { color: var(--text-dim); }
+.stat-row .v { font-weight: 500; text-align: right; }
+.springer { display: inline-block; margin-top: 8px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.86rem; border: 1px solid var(--line); padding: 8px 12px; background: var(--card); }
+
+/* Footer */
+footer.site { padding: 56px 0 34px; }
+.foot-grid { display: grid; grid-template-columns: 1.3fr 1.3fr .8fr; gap: 36px; margin-bottom: 36px; }
+@media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr; gap: 28px; } }
+footer.site h4 { font-size: 0.78rem; color: var(--accent-on-ink); font-weight: 600; margin: 0 0 14px; text-transform: uppercase; letter-spacing: .07em; }
+footer.site p, footer.site a { color: var(--text-on-ink-dim); font-size: 0.88rem; line-height: 1.65; text-decoration: none; }
+footer.site a:hover { color: var(--text-on-ink); text-decoration: underline; }
+.contact-list { list-style: none; margin: 0; padding: 0; }
+.contact-list li { margin-bottom: 12px; color: var(--text-on-ink-dim); font-size: 0.88rem; line-height: 1.45; }
+.contact-list b { color: var(--text-on-ink); font-weight: 500; display: block; }
+.venue { margin-bottom: 14px; }
+.venue b { color: var(--text-on-ink); font-weight: 500; display: block; }
+.foot-base { color: var(--text-on-ink-dim); font-size: 0.78rem; padding-top: 20px; border-top: 1px solid var(--line-dark); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+.to-top { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); width: 44px; height: 44px; background: #3454D1; color: #fff; border: none; cursor: pointer; font-size: 1.1rem; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 40; }
+.to-top.show { opacity: 1; pointer-events: auto; }
+
+@media (max-width: 640px) {
+  section { padding: 52px 0; }
+  .wrap { padding: 0 16px; }
+  header.site .bar { padding: 12px 16px; }
+  .hero { padding: 60px 0 56px; }
+  .topic-list { columns: 1; }
+}
+@media print {
+  header.site, .to-top, .cta-row, .countdown, .filter, .more-btn { display: none !important; }
+  .collapsible { max-height: none !important; }
+  .collapsible::after { display: none !important; }
+  .on-ink { background: #fff !important; color: #000 !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<header class="site">
+  <div class="bar">
+    <a class="mark" href="#home" aria-label="AIR-CPES 2027 home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#3454D1"/><path d="M36 8 18 36h12l-4 20 20-30H34z" fill="#F4F6FF"/></svg>
+      AIR-CPES<span>2027</span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="primary" id="nav" aria-label="Primary">
+      <a href="#about">About</a><a href="#topics">Topics</a><a href="#tracks">Tracks</a><a href="#dates">Dates</a>
+      <a href="#review">Submission</a><a href="#committee">Committee</a><a href="#advisory">Advisory</a>
+      <a href="#tpc">TPC</a><a href="#reviewers">Reviewers</a><a href="#publication">Publication</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero on-ink" id="home">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="badge">1st International Conference · Hybrid, India &amp; UK</p>
+    <h1>Artificial Intelligence for <em>Resilient</em> Cyber-Physical Energy Systems</h1>
+    <p class="lede">AIR-CPES 2027 brings together researchers, academics, and industry professionals shaping intelligent, secure, and resilient next-generation energy infrastructure. Selected accepted and presented papers will be considered for a two-volume Springer <em>Lecture Notes in Electrical Engineering</em> proceedings.</p>
+    <div class="hero-facts">
+      <div><span class="k">Dates</span><span class="v">March 8–9, 2027</span></div>
+      <div><span class="k">Venues</span><span class="v">MAIT, Delhi · BCU, Birmingham</span></div>
+      <div><span class="k">Proceedings</span><span class="v">Springer LNEE (2 vols)</span></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn solid" href="#review">Submit a Paper</a>
+      <a class="btn ghost" href="#dates">Important Dates</a>
+      <a class="btn ghost" href="#tracks">View Tracks</a>
+    </div>
+    <div class="countdown" id="countdown" aria-live="polite">
+      <span id="cd-label">Paper submission closes in</span>
+      <div class="cells">
+        <div class="cell"><b id="cd-d">–</b><small>days</small></div>
+        <div class="cell"><b id="cd-h">–</b><small>hrs</small></div>
+        <div class="cell"><b id="cd-m">–</b><small>min</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">About the conference</p>
+    <h2 class="sec-title">Energy systems are becoming cyber-physical systems</h2>
+    <div class="about-grid">
+      <div class="prose">
+        <p class="body-text">Rising electricity demand, decarbonisation targets, the transition of conventional consumers to active prosumers, and the requirement of highly secure communication interfaces are pushing conventional, infrastructure-centric power grids toward complex, bidirectional, data-rich cyber-physical systems — closely integrating generation, transmission, distribution, and storage assets with sensing, communication, computing, and control layers.</p>
+        <p class="body-text">Modern energy infrastructure is fundamentally a cyber-physical system, in which physical assets such as generation units, transmission and distribution networks, microgrids, batteries, electric vehicles, and smart appliances are closely integrated with digital layers. This integration creates significant opportunities for artificial intelligence while simultaneously introducing new vulnerabilities. AIR-CPES 2027 provides a platform for contributions from both the electrical engineering and computer science communities, encouraging interdisciplinary research connecting power systems, AI, communications, computing, cybersecurity, and data science.</p>
+        <p class="body-text">Together, the two volumes aim to provide an interdisciplinary reference for researchers, academicians, engineers, industry professionals, policymakers, and practitioners working at the intersection of AI, energy systems, cybersecurity, digitalisation, and resilience.</p>
+      </div>
+      <div>
+        <div class="vol-card">
+          <div class="tag">VOLUME I</div>
+          <h3>AI for Smart Grids, Microgrids &amp; Distributed Energy</h3>
+          <p>Data-driven forecasting and optimisation, AI-based monitoring, control, protection, fault diagnosis, digital twins, predictive maintenance, and AI-enabled cyber-threat and anomaly detection for resilient, self-healing systems.</p>
+        </div>
+        <div class="vol-card">
+          <div class="tag">VOLUME II</div>
+          <h3>Energy Storage, Electric Mobility &amp; Smart Energy Services</h3>
+          <p>AI-enabled battery management, state-of-health estimation, second-life battery assessment, smart charging, vehicle-to-grid technologies, intelligent energy markets, smart buildings and cities, and decentralised rural energy systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="topics">
+  <div class="wrap">
+    <p class="eyebrow">Call for papers</p>
+    <h2 class="sec-title">Conference topics</h2>
+    <p class="body-text" style="max-width:640px">Original research papers are welcome covering, but not limited to:</p>
+    <ul class="topic-list"><li>AI and Machine Learning for Energy Systems</li><li>Smart Grids, Microgrids and Cyber-Physical Energy Systems</li><li>Resilient and Secure Energy Systems</li><li>Cybersecurity and Cyber-Resilience</li><li>Digital Twins and Predictive Maintenance</li><li>Renewable Energy and Energy Integration</li><li>Energy Storage and Battery Management</li><li>Second-Life Batteries and Battery Health Assessment</li><li>Electric Vehicles, Smart Charging and Battery Swapping</li><li>AI-Based Energy Forecasting and Optimisation</li><li>Intelligent Energy Management Systems</li><li>IoT, Sensors and Edge Computing for Energy</li><li>Fault Detection, Protection and Intelligent Control</li><li>Distributed Energy Resources and Virtual Power Plants</li><li>Energy Efficiency and Smart Buildings</li><li>Smart Cities and Integrated Energy Systems</li><li>AI for Rural and Decentralised Energy Systems</li><li>Explainable and Trustworthy AI for Energy Applications</li><li>Emerging AI Technologies and Future Energy Systems</li></ul>
+  </div>
+</section>
+
+<section id="tracks">
+  <div class="wrap">
+    <p class="eyebrow">Thematic tracks</p>
+    <h2 class="sec-title">Eight tracks</h2>
+    <div class="track-grid">
+      <div class="track"><div class="num">TRACK 01</div><h3>Artificial Intelligence and Data-Driven Energy Systems</h3><p>Artificial intelligence, machine learning, deep learning, reinforcement learning, generative AI, computational intelligence, big data analytics, data-driven modelling, optimisation, forecasting, decision-making and intelligent control for modern energy systems.</p><details><summary>More scope</summary><p>Including explainable and trustworthy AI, federated and privacy-preserving learning, physics-informed machine learning, transfer learning, edge AI/TinyML, and open datasets and benchmarks for energy AI.</p></details></div>
+      <div class="track"><div class="num">TRACK 02</div><h3>Cyber-Physical Energy Systems, Smart Grids and Microgrids</h3><p>Cyber-physical energy systems, smart grids, intelligent microgrids, distributed energy resources, distributed generation, energy management, demand response, virtual power plants, real-time monitoring and control, grid automation, system stability and intelligent coordination of interconnected energy assets.</p><details><summary>More scope</summary><p>Including AI for power system state estimation, power flow, unit commitment, congestion management and transmission/distribution planning; AI-based control of grid-forming and grid-following inverters, low-inertia grids, HVDC/FACTS and power quality; and AI for island, remote, off-grid and disaster-relief microgrids.</p></details></div>
+      <div class="track"><div class="num">TRACK 03</div><h3>Resilience, Reliability and Cybersecurity</h3><p>Energy system resilience, reliability, cyber-physical security, cyber-threat detection, intrusion detection, anomaly detection, cybersecurity risk assessment, fault detection and diagnosis, self-healing systems, intelligent protection and control, disaster-resilient infrastructure and secure-by-design energy systems.</p><details><summary>More scope</summary><p>Including adversarial robustness of AI models, secure AI-enabled communication (5G/6G, IoT, satellite networks) and AI for extreme-weather and climate-driven outage prediction.</p></details></div>
+      <div class="track"><div class="num">TRACK 04</div><h3>Renewable and Sustainable Energy Systems</h3><p>AI for renewable energy integration, solar photovoltaic systems, agrivoltaics, wind and hybrid renewable energy systems, renewable energy forecasting, resource assessment, energy efficiency, sustainable energy planning, decentralised and rural energy systems, energy access and climate-resilient energy infrastructure.</p><details><summary>More scope</summary><p>Including AI for hydro, geothermal, biomass, waste-to-energy and ocean energy; AI for green hydrogen, electrolysers, fuel cells and power-to-X; AI for carbon accounting, emissions tracking, CCUS and life-cycle assessment; and the AI-driven energy-water-food nexus and energy harvesting.</p></details></div>
+      <div class="track"><div class="num">TRACK 05</div><h3>Energy Storage, Batteries and Electric Mobility</h3><p>Battery energy storage systems, battery management systems, state-of-charge and state-of-health estimation, battery degradation and remaining useful life prediction, second-life batteries, battery health grading and assessment, electric vehicles, smart EV charging, battery swapping, V2G, V2B and intelligent coordination of storage and electric mobility.</p><details><summary>More scope</summary><p>Including thermal and hydrogen storage, AI-based charging infrastructure planning, wireless EV charging, and electrification of heavy-duty, rail, maritime and aviation transport.</p></details></div>
+      <div class="track"><div class="num">TRACK 06</div><h3>Digital Twins, Predictive Maintenance and Intelligent Energy Infrastructure</h3><p>Digital twins for energy systems, AI-enabled predictive maintenance, condition monitoring, asset management, intelligent diagnostics, IoT-enabled monitoring, intelligent sensors, edge and cloud computing, system modelling and simulation, virtual commissioning and AI-based operational decision support.</p><details><summary>More scope</summary><p>Including AI for thermal systems (district heating and cooling, heat pumps, CHP), industrial energy systems and process-industry efficiency, and interoperability standards (IEC 61850, OpenADR, IEEE 2030) for AI-enabled infrastructure.</p></details></div>
+      <div class="track"><div class="num">TRACK 07</div><h3>Intelligent Energy Markets, Smart Buildings and Smart Cities</h3><p>AI applications in energy markets, electricity pricing and trading, peer-to-peer energy trading, blockchain-enabled energy transactions, prosumers and energy communities, demand-side flexibility, smart homes and buildings, building energy management, smart cities, integrated energy systems, intelligent mobility and data-driven energy services.</p><details><summary>More scope</summary><p>Including smart metering and AMI analytics, non-intrusive load monitoring (NILM), consumer load profiling, multi-energy and sector-coupled systems, AI for market design and regulation, and consumer behaviour, social acceptance and energy justice.</p></details></div>
+      <div class="track"><div class="num">TRACK 08</div><h3>Emerging Technologies, Applications and Case Studies</h3><p>Emerging AI technologies and applications in energy systems, generative AI and large language models for energy, AI for climate adaptation and resilience, industry and utility applications, AI data centres integration, pilot and demonstration projects, community and rural energy applications, smart city deployments and interdisciplinary case studies.</p><details><summary>More scope</summary><p>Including field demonstrations, lessons learned and future directions; agentic AI, foundation models for energy, quantum and neuromorphic computing for energy applications, energy-efficient and sustainable AI, and AI governance, ethics and regulation in the energy sector.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<section class="on-ink" id="dates">
+  <div class="wrap">
+    <p class="eyebrow">Key deadlines</p>
+    <h2 class="sec-title">Important dates</h2>
+    <div class="timeline">
+      <div class="tl-item" data-date="2027-01-10"><div class="date">January 10, 2027</div><div class="label">Paper submission deadline</div></div>
+      <div class="tl-item" data-date="2027-02-01"><div class="date">February 1, 2027</div><div class="label">Notification of acceptance</div></div>
+      <div class="tl-item" data-date="2027-02-15"><div class="date">February 15, 2027</div><div class="label">Camera-ready paper submission</div></div>
+      <div class="tl-item" data-date="2027-02-25"><div class="date">February 25, 2027</div><div class="label">Author registration deadline</div></div>
+      <div class="tl-item hl" data-date="2027-03-08"><div class="date">March 8–9, 2027</div><div class="label">AIR-CPES 2027 — India &amp; UK</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="review">
+  <div class="wrap">
+    <p class="eyebrow">Submission &amp; review</p>
+    <h2 class="sec-title">Peer review &amp; publishing policy</h2>
+    <div class="pub-grid">
+      <div class="prose">
+        <p class="body-text">Every paper is sent to at least three reviewers; acceptance requires recommendations from at least two, with the final decision resting with the conference chair. All submissions are screened for plagiarism via Turnitin, with a required similarity index below 15%.</p>
+        <p class="body-text">Review is double-blind — author identities are withheld from reviewers, and the author list must not appear in the submitted manuscript. Papers that do not conform to the double-blind policy are rejected without review.</p>
+        <div class="callout"><b>How to submit:</b> papers (max. 8 pages, PDF) are submitted through the EasyChair conference management system. The submission link will be published here — for queries, write to the <a href="#contact">conveners</a>.</div>
+      </div>
+      <ul class="policy-list">
+        <li>Only original, unpublished work will be considered</li>
+        <li>Submission via the EasyChair conference management system, in PDF format</li>
+        <li>No page numbers or special headers/footers in the manuscript</li>
+        <li>Changes to paper metadata permitted before the submission deadline</li>
+        <li>Self-plagiarism and dual submissions are treated as professional misconduct</li>
+        <li>A maximum of 10 papers assigned to any single reviewer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="committee">
+  <div class="wrap">
+    <p class="eyebrow">Organizing committee</p>
+    <h2 class="sec-title">Chairs &amp; secretariat</h2>
+    <div class="committee-grid"><div><p class="role">Chief Patrons</p><ul class="names"><li>Dr. Nand Kishore Garg <span>Founder &amp; Chief Advisor, MATES, India</span></li><li>Mr. Vineet Kumar Gupta (Lohia) <span>Chairman, MATES, India</span></li></ul></div><div><p class="role">General Chairs</p><ul class="names"><li>Dr. Vikram Bali <span>Director, MAIT, Delhi, India</span></li><li>Dr. Florimond Guéniat <span>Birmingham City University, UK</span></li></ul></div><div><p class="role">Co-General Chairs</p><ul class="names"><li>Dr. Satvir Singh Deswal <span>Additional Director, MAIT, Delhi, India</span></li><li>Dr. Sachin Gupta <span>Dean (R&amp;I), MAIT, Delhi, India</span></li></ul></div><div><p class="role">Conveners &amp; Co-Convener</p><ul class="names"><li>Prof. (Dr.) Neelu Nagpal <span>Professor, ECE, MAIT, Delhi — Convener</span></li><li>Dr. Sandeep Dhundhara <span>Birmingham City University, UK — Convener</span></li><li>Mr. Ravi Sharma <span>Assistant Professor, EEE, MAIT, Delhi — Co-Convener</span></li></ul></div><div><p class="role">Organising Secretaries</p><ul class="names"><li>Dr. Nitesh Wadhera <span>Assistant Professor, IT, MAIT, Delhi</span></li><li>Dr. Naveen Solanki <span>Associate Professor, ME, MAIT, Delhi</span></li><li>Dr. Mini Aggarwal <span>Organizing Secretary, MAIT, Delhi</span></li></ul></div><div><p class="role">Publication Chair</p><ul class="names"><li>Dr. Neelam Sharma <span>Associate Professor, CSE, MAIT, Delhi</span></li></ul></div><div><p class="role">Publicity Chairs</p><ul class="names"><li>Dr. Ratika Sikand <span>Assistant Professor, MBA, MAIT, Delhi</span></li><li>Dr. Deepak Gupta <span>Associate Professor, CSE, MAIT, Delhi</span></li></ul></div><div><p class="role">Technical Program Chairs</p><ul class="names"><li>Dr. Anupam Kumar <span>Associate Professor, CSE, MAIT, Delhi</span></li><li>Dr. Anubha Goel <span>Associate Professor, ECE, MAIT, Delhi</span></li><li>Dr. Sandeep Tayal <span>Associate Professor, CSE, MAIT, Delhi</span></li></ul></div><div><p class="role">Finance Chair</p><ul class="names"><li>Dr. Bhoomi Gupta <span>HoD-CSE &amp; Professor, MAIT, Delhi</span></li></ul></div><div><p class="role">Tutorial / Special Session / Keynotes Chairs</p><ul class="names"><li>Dr. Kavita Saxena <span>Assistant Professor, CSE, MAIT, Delhi</span></li><li>Dr. Poonam Juneja <span>Assistant Professor, EEE, MAIT, Delhi</span></li></ul></div><div><p class="role">Industry &amp; Sponsorship Chairs</p><ul class="names"><li>Dr. Neelam Kassarwani <span>Professor, EEE, MAIT, Delhi</span></li><li>Dr. Deepak Gupta <span>Associate Professor, CSE, MAIT, Delhi</span></li><li>Dr. Tripti Lamba <span>Associate Professor, CSE, MAIT, Delhi</span></li></ul></div><div><p class="role">Logistics</p><ul class="names"><li>Dr. Sunil Kumar Pandey <span>Associate Professor, EEE, MAIT, Delhi</span></li><li>Dr. Vipin Kumar Sharma <span>Assistant Professor, ME, MAIT, Delhi</span></li></ul></div><div><p class="role">Registration Chairs</p><ul class="names"><li>Dr. Neeraj Rathi <span>Associate Professor, ECE, MAIT, Delhi</span></li><li>Dr. Surabhi Lata <span>Assistant Professor, ME, MAIT, Delhi</span></li><li>Dr. Deepika Bansal <span>Assistant Professor, CSE, MAIT, Delhi</span></li><li>Dr. Varun Goel <span>Assistant Professor, IT, MAIT, Delhi</span></li></ul></div></div>
+  </div>
+</section>
+
+<section id="advisory">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">International / national advisory committee</p><h2 class="sec-title">Advisory board</h2></div>
+      <input class="filter" type="search" placeholder="Search name or institution…" data-target="adv-grid" aria-label="Search advisory board">
+    </div>
+    <div class="collapsible" data-collapse><div class="name-grid" id="adv-grid"><div class="np"><b>Prof. Pierluigi Siano</b><span>University of Salerno, Italy</span></div><div class="np"><b>Prof. Ali Al-Awami</b><span>University of Technology Sydney, Australia</span></div><div class="np"><b>Dr. Hassan Haes Alhelou</b><span>Massachusetts Institute of Technology, USA</span></div><div class="np"><b>Prof. Li Li</b><span>University of Technology Sydney, Australia</span></div><div class="np"><b>Prof. Akshay Rathore</b><span>Singapore Institute of Technology, Singapore</span></div><div class="np"><b>Dr. Marta Molinas</b><span>Dept. of Engg. Cybernetics, Norway</span></div><div class="np"><b>Prof. R. C. Bansal</b><span>University of Sharjah, UAE</span></div><div class="np"><b>Prof. Akhtar Kalam</b><span>Victoria University, Australia</span></div><div class="np"><b>Dr. Jahangir Hossain</b><span>University of Technology Sydney, Australia</span></div><div class="np"><b>Prof. Mohan Kolhe</b><span>University of Agder, Norway</span></div><div class="np"><b>Dr. Emre Çelik</b><span>Düzce University, Turkey</span></div><div class="np"><b>Dr. Haluk Gözde</b><span>National Defence University, Turkey</span></div><div class="np"><b>Dr. Sukumar Mishra</b><span>EED, IIT Delhi</span></div><div class="np"><b>Dr. Bhim Singh</b><span>IIT Delhi</span></div><div class="np"><b>Dr. N. P. Padhy</b><span>EED, IIT Roorkee</span></div><div class="np"><b>Dr. B. K. Panigrahi</b><span>EED, IIT Delhi</span></div><div class="np"><b>Dr. Narender Kumar</b><span>EED, DTU Delhi</span></div><div class="np"><b>Dr. Dheeraj Joshi</b><span>EED, DTU Delhi</span></div><div class="np"><b>Dr. Ashok De</b><span>ECED, DTU Delhi</span></div><div class="np"><b>Prof. K. S. Sandhu</b><span>NIT Kurukshetra</span></div><div class="np"><b>Dr. S. K. Gupta</b><span>DCRUST, Murthal, Sonepat</span></div><div class="np"><b>Dr. D. K. Jain</b><span>DCRUST, Murthal, Sonepat</span></div><div class="np"><b>Dr. Manoj Duhan</b><span>DCRUST, Murthal, Sonepat</span></div><div class="np"><b>Prof. T. S. Bhatti</b><span>IIT Delhi</span></div><div class="np"><b>Prof. R. K. Sahu</b><span>VSSUT, Burla, Odisha</span></div><div class="np"><b>Prof. H. D. Mathur</b><span>BITS Pilani</span></div><div class="np"><b>Prof. Nidul Sinha</b><span>NIT Silchar</span></div><div class="np"><b>Dr. L. C. Saikia</b><span>NIT Silchar</span></div><div class="np"><b>Dr. R. J. Abraham</b><span>IIST, Kerala</span></div><div class="np"><b>Prof. Valentina Emilia Balas</b><span>Aurel Vlaicu University of Arad, Romania</span></div><div class="np"><b>Prof. Hany Hasanien</b><span>Ain Shams University, Cairo, Egypt</span></div><div class="np"><b>Prof. A. P. Mittal</b><span>NSUT, Delhi</span></div><div class="np"><b>Prof. K. P. S. Rana</b><span>NSUT, Delhi</span></div><div class="np"><b>Prof. Yajvender Pal Verma</b><span>Panjab University, Chandigarh</span></div><div class="np"><b>Prof. J. N. Rai</b><span>Delhi Technological University, Delhi</span></div><div class="np"><b>Prof. Mukhtiyar Singh</b><span>DTU, Delhi</span></div><div class="np"><b>Prof. Sanjeev Singh</b><span>MANIT, Bhopal</span></div><div class="np"><b>Prof. Prerna Gaur</b><span>NSUT, Delhi</span></div><div class="np"><b>Prof. R. S. Gupta</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. V. N. Mathur</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Sunil Kumar</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Vinay Saini</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Monika Gupta</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Amita Goel</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Puja Singh</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Vaibhav Jain</b><span>MAIT, Delhi</span></div><div class="np"><b>Prof. Anuradha Tomar</b><span>FoT, Delhi University</span></div><div class="np"><b>Prof. J. V. Desai</b><span>Ramaiah Institute of Science and Management, Bengaluru</span></div></div></div>
+    <p class="no-match">No matching names.</p>
+    <button class="more-btn" type="button">Show all</button>
+  </div>
+</section>
+
+<section class="tint" id="tpc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Technical programme committee</p><h2 class="sec-title">Programme committee</h2></div>
+      <input class="filter" type="search" placeholder="Search name or institution…" data-target="tpc-grid" aria-label="Search programme committee">
+    </div>
+    <div class="name-grid" id="tpc-grid"><div class="np"><b>Dr. Anshul Agarwal</b><span>NIT Delhi</span></div><div class="np"><b>Dr. Nizamuddin</b><span>Noida Authority, U.P.</span></div><div class="np"><b>Dr. Puja Dash</b><span>GVPCE, Visakhapatnam, Andhra Pradesh</span></div><div class="np"><b>Dr. Nikhil Pathak</b><span>Tsinghua University, Beijing, China</span></div><div class="np"><b>Dr. M. K. Debnath</b><span>Siksha 'O' Anusandhan University, Bhubaneswar, Odisha</span></div><div class="np"><b>Dr. C. K. Shiva</b><span>S. R. Engineering College, Warangal</span></div><div class="np"><b>Dr. Dipayan Guha</b><span>MNNIT Allahabad</span></div><div class="np"><b>Dr. Anil Kumar</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Rajiv Kumar</b><span>JUIT, Waknaghat, Solan, H.P.</span></div><div class="np"><b>Dr. Sandeep Dhundhara</b><span>CCS HAU, Hisar</span></div><div class="np"><b>Dr. Naresh Yadav</b><span>DCRUST, Murthal, Sonepat</span></div><div class="np"><b>Dr. Mandeep Sharma</b><span>BHSBIET, Lehragaga, Punjab</span></div><div class="np"><b>Dr. Lalit Kumar</b><span>SVSU, Gurugram, Haryana</span></div><div class="np"><b>Dr. B. Vedik</b><span>S.R. Engineering College, Warangal</span></div><div class="np"><b>Dr. Pankaj Dahiya</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. M. L. Aggarwal</b><span>Dean FET, JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. P. R. Sharma</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Rajesh Ahuja</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Anju Gupta</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Munish Vashisth</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Neelam Turk</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Pradeep Dhimri</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Komal Bhatia</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Surender Dhaiya</b><span>DCRUST, Murthal, Sonepat</span></div><div class="np"><b>Dr. Rajeev Saha</b><span>JCBUST, YMCA Faridabad</span></div><div class="np"><b>Dr. Shilpa Sethi</b><span>JCBUST, YMCA Faridabad</span></div></div>
+    <p class="no-match">No matching names.</p>
+  </div>
+</section>
+
+<section id="reviewers">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow"><span id="rev-count">112</span> reviewers confirmed</p><h2 class="sec-title">Review board</h2></div>
+      <input class="filter" type="search" placeholder="Search name or institution…" data-target="rev-grid" aria-label="Search review board">
+    </div>
+    <div class="collapsible" data-collapse><div class="name-grid" id="rev-grid"><div class="np"><b>Prof. Cham Athwal</b><span>Birmingham City University, UK</span></div><div class="np"><b>Dr. Shishank Shishank</b><span>Birmingham City University, UK</span></div><div class="np"><b>Dr. Mohammadhossein Nejatiamiri</b><span>University of Warwick, UK</span></div><div class="np"><b>Dr. Alireza Keyhani Asl</b><span>Aston University, UK</span></div><div class="np"><b>Dr. R.K.A Bharadwaj Kolluri</b><span>Birmingham City University, UK</span></div><div class="np"><b>Dr. Khondokar Rahman</b><span>Birmingham City University, UK</span></div><div class="np"><b>Prof. C.K Saha</b><span>Bangladesh Agricultural University, Mymensingh, Bangladesh</span></div><div class="np"><b>Dr. Anisur Rehman</b><span>Bangladesh Agricultural University, Mymensingh, Bangladesh</span></div><div class="np"><b>Dr. Anil Kumar</b><span>DCRUST Murthal, India</span></div><div class="np"><b>Dr. Deepesh Sharma</b><span>DCRUST Murthal, India</span></div><div class="np"><b>Prof. Y. P. Verma</b><span>UIET Chandigarh</span></div><div class="np"><b>Dr. Bhavnesh Kumar</b><span>NSIT Delhi</span></div><div class="np"><b>Dr. Baidynath Bag</b><span>NIT Raipur</span></div><div class="np"><b>Dr. Manish Kumar</b><span>Central University of Haryana</span></div><div class="np"><b>Dr. Rajender Beniwal</b><span>GJUST, Hisar</span></div><div class="np"><b>Dr. Murlidhar</b><span>CU Mahendergarh</span></div><div class="np"><b>Dr. Sunanda Sinha</b><span>MNIT Jaipur</span></div><div class="np"><b>Dr. Parul Mathuriya</b><span>MNIT Jaipur</span></div><div class="np"><b>Prof. K. S. Sandhu</b><span>NIT Kurukshetra</span></div><div class="np"><b>Dr. Babita Yadav</b><span>Manav Rachna University, Faridabad</span></div><div class="np"><b>Dr. Mukhtiyar Singh</b><span>DTU, Delhi</span></div><div class="np"><b>Dr. Lakshmi D</b><span>VIT Bhopal University</span></div><div class="np"><b>Dr. Rudrodip Majumdar</b><span>National Institute of Advanced Studies</span></div><div class="np"><b>Dr. Mayank Srivastava</b><span>NIT Jamshedpur</span></div><div class="np"><b>Dr. Sanjib Ganguly</b><span>IIT Guwahati</span></div><div class="np"><b>Dr. Bhaskar Singh</b><span>Central University of Jharkhand</span></div><div class="np"><b>Dr. Abha Kumari</b><span>Muzaffarpur Institute of Technology, Bihar</span></div><div class="np"><b>Dr. Devanjali Relan</b><span>BML Munjal University, Haryana</span></div><div class="np"><b>Dr. Tasneem Bano Rehman</b><span>Muffakham Jah College of Engineering &amp; Technology, Hyderabad</span></div><div class="np"><b>Dr. Somesubhra Panda</b><span>Global Institute of Science &amp; Technology, Dhanbad</span></div><div class="np"><b>Dr. Sumit Saroha</b><span>GJUST, Hisar</span></div><div class="np"><b>Dr. Amrish Devanshu</b><span>NIT Silchar, Assam</span></div><div class="np"><b>Dr. Om Prakash Jeena</b><span>Ravenshaw University, Odisha</span></div><div class="np"><b>Dr. Namita Mittal</b><span>MNIT, Jaipur</span></div><div class="np"><b>Dr. Vaibhav Aggarwal</b><span>O. P. Jindal University, Sonipat</span></div><div class="np"><b>Dr. Megha Bansal</b><span>VIPS-TC, New Delhi</span></div><div class="np"><b>Dr. Neha Goel</b><span>VIPS-TC, New Delhi</span></div><div class="np"><b>Dr. Nutan Singh</b><span>UPES, Dehradun</span></div><div class="np"><b>Dr. G. B. Pandey</b><span>PDEU, Gujarat</span></div><div class="np"><b>Dr. Pankaj Gupta</b><span>IGDTUW, Delhi</span></div><div class="np"><b>Dr. Kusum Tharani</b><span>BVCOE, Delhi</span></div><div class="np"><b>Dr. Prakash Chittora</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Amit Kumar</b><span>NIT Srinagar, J&amp;K</span></div><div class="np"><b>Dr. Ravendra Singh</b><span>GCET, Greater Noida</span></div><div class="np"><b>Dr. Rahul Satheesh</b><span>Amrita School of Engineering, Coimbatore</span></div><div class="np"><b>Dr. Poras Kheterpal</b><span>BVCOE, Delhi</span></div><div class="np"><b>Dr. Nikita Gupta</b><span>NIT Hamirpur</span></div><div class="np"><b>Dr. Neeraj Kumar</b><span>BVCOE, Delhi</span></div><div class="np"><b>Dr. Gaurav Yadav</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Manoj Badoni</b><span>Thapar Institute of Engineering &amp; Technology, Patiala</span></div><div class="np"><b>Dr. Deepak Kumar</b><span>UIET Chandigarh</span></div><div class="np"><b>Dr. Yogendra Arya</b><span>J. C. Bose University of Science &amp; Technology, Faridabad</span></div><div class="np"><b>Dr. Sunil Kumar</b><span>GJUST, Hisar</span></div><div class="np"><b>Dr. Rajender Kumar</b><span>CCS HAU, Hisar</span></div><div class="np"><b>Dr. Parvesh Antil</b><span>CCS HAU, Hisar</span></div><div class="np"><b>Dr. S. Indu</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Bhawna Aggarwal</b><span>FoT, Delhi University</span></div><div class="np"><b>Dr. Bharat Singh</b><span>BVCOE, Delhi</span></div><div class="np"><b>Dr. Aparna N Mahajan</b><span>Maharaja Agrasen University, Solan</span></div><div class="np"><b>Dr. Sunil Gupta</b><span>MSIT, Delhi</span></div><div class="np"><b>Dr. Nidhi Gupta</b><span>MSIT, Delhi</span></div><div class="np"><b>Dr. Gaurav Kaushik</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Rahul Gupta</b><span>Maharaja Agrasen University, Solan</span></div><div class="np"><b>Prof. Ashwani Sharma</b><span>NIT Kurukshetra</span></div><div class="np"><b>Dr. P. Kedarnath Dubey</b><span>CSIR-NPL, Delhi</span></div><div class="np"><b>Dr. S. Seela Kumar Titus</b><span>CSIR-NPL, Delhi</span></div><div class="np"><b>Dr. Prashant Giridhar Shambharkar</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Dheryta Jaisinghani</b><span>University of Northern Iowa, USA</span></div><div class="np"><b>Dr. Inderjeet Kaur</b><span>Ajay Kumar Garg Engineering College, Ghaziabad</span></div><div class="np"><b>Dr. Gubba Naveen</b><span>Joginpally B R Engineering College, Hyderabad</span></div><div class="np"><b>Dr. Shaista Tarannum</b><span>Ramaiah University of Applied Sciences, Bengaluru</span></div><div class="np"><b>Dr. Raquel Castro Madureira</b><span>Universidade de Aveiro, Portugal</span></div><div class="np"><b>Dr. Rajni Bala</b><span>Deen Dayal Upadhyaya College, University of Delhi</span></div><div class="np"><b>Dr. Mansi Subhedar</b><span>PHCET, University of Mumbai</span></div><div class="np"><b>Dr. Taieb Jemal</b><span>IIT Sfax / North American University, Tunisia</span></div><div class="np"><b>Dr. B. Kesava Rao</b><span>Mahatma Gandhi Institute of Technology, Hyderabad</span></div><div class="np"><b>Dr. Chioma Violet Oleka</b><span>Enugu State University of Science &amp; Technology, Nigeria</span></div><div class="np"><b>Dr. Madhu Valavala</b><span>Swarnandhra College of Engineering &amp; Technology</span></div><div class="np"><b>Dr. Ubaid Qureshi</b><span>University of Kashmir, Srinagar</span></div><div class="np"><b>Dr. Arvind Rehalia</b><span>BVCOE, Delhi</span></div><div class="np"><b>Dr. Sonal John</b><span>Oriental University, Indore</span></div><div class="np"><b>Dr. Rajiv Pradhan</b><span>Central Agricultural University, Imphal</span></div><div class="np"><b>Dr. Surekha R Sakhare</b><span>A G Patil Institute of Technology, Solapur</span></div><div class="np"><b>Dr. Pankaj Kawadkar</b><span>G. H Raisoni College of Engineering &amp; Management, Nagpur</span></div><div class="np"><b>Dr. Rakhi Kamra</b><span>Maharaja Surajmal Institute of Technology, Delhi</span></div><div class="np"><b>Dr. Richa Bhatia</b><span>GGSIPU, Delhi</span></div><div class="np"><b>Dr. Krupali Donda</b><span>Adani University, Ahmedabad</span></div><div class="np"><b>Dr. Shweta</b><span>NIT Calicut, Kozhikode</span></div><div class="np"><b>Dr. Sudhamani M J</b><span>PES University, Bangalore</span></div><div class="np"><b>Dr. Smita Nawal</b><span>NIT Warangal</span></div><div class="np"><b>Dr. Monika Yadav</b><span>UPES, Dehradun</span></div><div class="np"><b>Dr. Bhavana Jangid</b><span>GIZ GmbH, New Delhi</span></div><div class="np"><b>Dr. P. Annan Naidu</b><span>GMRIT, Rajam, Vizianagaram</span></div><div class="np"><b>Dr. Sunakshi Mehra</b><span>Delhi Technological University</span></div><div class="np"><b>Dr. Shruti Jain</b><span>Jaypee University of Information Technology, Solan</span></div><div class="np"><b>Dr. Ramesh Singh</b><span>Tata Elxsi, Bengaluru</span></div><div class="np"><b>Dr. Saurabh Agarwal</b><span>Yeungnam University, South Korea</span></div><div class="np"><b>Dr. Lakshmi Mohandas</b><span>Amrita Vishwa Vidyapeetham, Faridabad</span></div><div class="np"><b>Dr. Yuvaraja Teekaraman</b><span>American International University, Kuwait</span></div><div class="np"><b>Dr. Karuna Sitaram Kirwale</b><span>Amity University, Mumbai</span></div><div class="np"><b>Dr. S. Sasikala</b><span>Kumaraguru College of Technology, Coimbatore</span></div><div class="np"><b>Dr. Monalisa Pattanaik</b><span>NIT Rourkela</span></div><div class="np"><b>Dr. Leena Chandrashekhar</b><span>RNS Institute of Technology, Bangalore</span></div><div class="np"><b>Dr. Ahteshamul Haque</b><span>Jamia Millia Islamia, New Delhi</span></div><div class="np"><b>Dr. Amber Khan</b><span>Jamia Millia Islamia, New Delhi</span></div><div class="np"><b>Dr. Mary Christeena Thomas</b><span>SRM Institute of Science &amp; Technology, Chennai</span></div><div class="np"><b>Dr. Suraj Prakash Sahoo</b><span>Vellore Institute of Technology, Vellore</span></div><div class="np"><b>Dr. Tej C Hiremath</b><span>Vidyavardhaka College of Engineering, Mysore</span></div><div class="np"><b>Dr. Sachikanta Dash</b><span>Madanapalle Institute of Technology and Science</span></div><div class="np"><b>Dr. Jyothi A P</b><span>Ramaiah Institute of Science and Management, Bengaluru</span></div><div class="np"><b>Dr. Jyothi Pillai</b><span>Bhilai Institute of Technology, Durg</span></div><div class="np"><b>Dr. Arjun Puri</b><span>Chitkara University</span></div></div></div>
+    <p class="no-match">No matching names.</p>
+    <button class="more-btn" type="button">Show all</button>
+  </div>
+</section>
+
+<section class="tint" id="publication">
+  <div class="wrap">
+    <p class="eyebrow">Proceedings</p>
+    <h2 class="sec-title">Published by Springer</h2>
+    <div class="pub-grid">
+      <div class="prose">
+        <p class="body-text">Accepted, presented papers will be considered for a two-volume Springer proceedings in the <em>Lecture Notes in Electrical Engineering</em> series, edited by Dr. Neelu Nagpal (MAIT), Prof. Sachin Gupta (MAIT), Prof. Ashwani Kumar (NIT Kurukshetra), and Dr. Sandeep Dhundhara (Birmingham City University, UK).</p>
+        <p class="body-text">At least one author of every accepted paper must register for and present at the conference, or the paper will not be included in the proceedings.</p>
+        <span class="springer">Springer · Lecture Notes in Electrical Engineering</span>
+      </div>
+      <div class="stat-list">
+        <div class="stat-row"><span class="k">Expected acceptance rate</span><span class="v">~40%</span></div>
+        <div class="stat-row"><span class="k">Reviewers per paper</span><span class="v">3 assigned, 2 must accept</span></div>
+        <div class="stat-row"><span class="k">Expected participants</span><span class="v">~200</span></div>
+        <div class="stat-row"><span class="k">Papers per volume</span><span class="v">~50 (two volumes)</span></div>
+        <div class="stat-row"><span class="k">Max length per paper</span><span class="v">8 pages</span></div>
+        <div class="stat-row"><span class="k">Proceedings series</span><span class="v">Springer LNEE</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site on-ink" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Venues · parallel sessions</h4>
+        <p class="venue"><b>Maharaja Agrasen Institute of Technology (MAIT)</b>Sector 22, PSP Area, Rohini, Delhi, India · <a href="https://maps.google.com/?q=Maharaja+Agrasen+Institute+of+Technology+Rohini+Delhi" target="_blank" rel="noopener">Map ↗</a></p>
+        <p class="venue"><b>Birmingham City University (BCU)</b>Millennium Point, Curzon St, Birmingham B4 7AP, UK · <a href="https://maps.google.com/?q=Millennium+Point+Curzon+St+Birmingham+B4+7AP" target="_blank" rel="noopener">Map ↗</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><b>Prof. (Dr.) Neelu Nagpal — Convener</b><a href="mailto:neelunagpal@mait.ac.in">neelunagpal@mait.ac.in</a> · <a href="tel:+919811893230">+91 98118 93230</a></li>
+          <li><b>Dr. Sandeep Dhundhara — Convener (UK)</b><a href="mailto:sandeep.dhundhara2@bcu.ac.uk">sandeep.dhundhara2@bcu.ac.uk</a> · <a href="tel:+447884289573">+44 7884 289573</a></li>
+          <li><b>Mr. Ravi Sharma — Co-Convener</b><a href="tel:+919811387672">+91 98113 87672</a></li>
+          <li><b>Dr. Mini Aggarwal — Organizing Secretary</b><a href="tel:+918743891304">+91 87438 91304</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <p><a href="#about">About</a><br><a href="#topics">Topics</a><br><a href="#tracks">Tracks</a><br><a href="#dates">Important dates</a><br><a href="#review">Submission</a><br><a href="#committee">Committee</a><br><a href="#reviewers">Reviewers</a><br><a href="#publication">Publication</a></p>
+      </div>
+    </div>
+    <div class="foot-base"><span>AIR-CPES 2027 · Maharaja Agrasen Institute of Technology, Delhi, in collaboration with Birmingham City University, UK</span><span>www.aircpes.in</span></div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function () {
+  // Mobile menu
+  var btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.textContent = open ? 'Close' : 'Menu';
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); btn.textContent = 'Menu'; }
+  });
+
+  // Active nav link on scroll
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id); });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) io.observe(s); });
+  }
+
+  // Countdown (deadline: 10 Jan 2027, 23:59 IST)
+  var steps = [
+    { t: new Date('2027-01-10T23:59:00+05:30'), l: 'Paper submission closes in' },
+    { t: new Date('2027-03-08T09:00:00+05:30'), l: 'Conference begins in' }
+  ];
+  function pad(n) { return n < 10 ? '0' + n : n; }
+  function tick() {
+    var now = new Date(), step = null;
+    for (var i = 0; i < steps.length; i++) { if (steps[i].t > now) { step = steps[i]; break; } }
+    var box = document.getElementById('countdown');
+    if (!step) { box.style.display = 'none'; return; }
+    document.getElementById('cd-label').textContent = step.l;
+    var s = Math.floor((step.t - now) / 1000);
+    document.getElementById('cd-d').textContent = Math.floor(s / 86400);
+    document.getElementById('cd-h').textContent = pad(Math.floor(s % 86400 / 3600));
+    document.getElementById('cd-m').textContent = pad(Math.floor(s % 3600 / 60));
+  }
+  tick(); setInterval(tick, 30000);
+
+  // Timeline: mark past dates and the next upcoming one
+  var today = new Date(), nextMarked = false;
+  document.querySelectorAll('.tl-item').forEach(function (it) {
+    var d = new Date(it.getAttribute('data-date') + 'T23:59:00+05:30');
+    if (d < today) { it.classList.add('past'); }
+    else if (!nextMarked) {
+      nextMarked = true;
+      var days = Math.ceil((d - today) / 86400000);
+      var tag = document.createElement('span'); tag.className = 'when';
+      tag.textContent = days === 0 ? 'Today' : 'Next · in ' + days + ' days';
+      it.appendChild(tag);
+    }
+  });
+
+  // Collapsible lists
+  document.querySelectorAll('.more-btn').forEach(function (b) {
+    var box = b.parentNode.querySelector('[data-collapse]');
+    b.addEventListener('click', function () {
+      var ex = box.classList.toggle('expanded');
+      b.textContent = ex ? 'Show less' : 'Show all';
+      if (!ex) box.scrollIntoView({ block: 'start' });
+    });
+  });
+
+  // Search filters
+  document.querySelectorAll('.filter').forEach(function (inp) {
+    var grid = document.getElementById(inp.getAttribute('data-target'));
+    var wrap = grid.closest('.wrap');
+    var box = wrap.querySelector('[data-collapse]');
+    var btnMore = wrap.querySelector('.more-btn');
+    var none = wrap.querySelector('.no-match');
+    inp.addEventListener('input', function () {
+      var q = inp.value.trim().toLowerCase(), shown = 0;
+      grid.querySelectorAll('.np').forEach(function (np) {
+        var hit = !q || np.textContent.toLowerCase().indexOf(q) !== -1;
+        np.hidden = !hit; if (hit) shown++;
+      });
+      if (box) { box.classList.toggle('expanded', !!q); }
+      if (btnMore) { btnMore.style.display = q ? 'none' : ''; btnMore.textContent = 'Show all'; }
+      none.style.display = shown ? 'none' : 'block';
+    });
+  });
+
+  // Back to top
+  var tt = document.querySelector('.to-top');
+  window.addEventListener('scroll', function () { tt.classList.toggle('show', window.scrollY > 900); }, { passive: true });
+  tt.addEventListener('click', function () { window.scrollTo({ top: 0 }); });
+})();
+</script>
+</body>
+</html>
