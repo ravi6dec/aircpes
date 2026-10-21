@@ -17,9 +17,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="announce">
+  <div class="wrap announce-row">
+    <span><span class="pill">Call for Papers Open</span> Paper submission deadline: <b>10 January 2027</b> · Submission via <b>Microsoft CMT</b></span>
+    <span class="announce-links"><a href="call-for-papers.html#dates">Important Dates</a><a href="submission.html">Guidelines</a><a href="contact.html">Contact</a></span>
+  </div>
+</div>
 <header class="masthead">
   <div class="wrap brandrow">
     <a class="brand" href="index.html" aria-label="AIRCPES 2027 home">
@@ -33,11 +41,15 @@
       <span class="sep"></span>
       <span class="pt springer"><b>Springer</b><small>Proceedings</small></span>
     </div>
+    <div class="head-actions">
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="btn solid sm" type="button" data-open-cmt>Submit Paper</button>
+    </div>
   </div>
   <nav class="mainnav" aria-label="Primary">
     <div class="wrap navrow">
       <button class="menu-btn" aria-expanded="false" aria-controls="navlinks">☰ Menu</button>
-      <div class="navlinks" id="navlinks"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="call-for-papers.html">Call for Paper</a><a href="submission.html">Submission</a><a href="committee.html">Committee</a><a href="registration.html">Registration</a><a href="publication.html">Publication</a><a href="contact.html" class="active" aria-current="page">Contact Us</a></div>
+      <div class="navlinks" id="navlinks"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="call-for-papers.html">Call for Paper</a><a href="submission.html">Submission</a><a href="committee.html">Committee</a><a href="speakers.html">Speakers</a><a href="registration.html">Registration</a><a href="publication.html">Publication</a><a href="contact.html" class="active" aria-current="page">Contact Us</a></div>
     </div>
   </nav>
 </header>
@@ -59,10 +71,7 @@
     <h2 class="h">Contact Us</h2>
     <p>Please feel free to contact the following resource persons for any query.</p>
     <div class="contact-grid">
-      <div class="ccard"><h3>Prof. (Dr.) Neelu Nagpal</h3><p class="role">Convener · MAIT, Delhi</p><p><a href="tel:+919811893230">+91 98118 93230</a><br><a href="mailto:neelunagpal@mait.ac.in">neelunagpal@mait.ac.in</a></p></div>
-      <div class="ccard"><h3>Dr. Sandeep Dhundhara</h3><p class="role">Convener · Birmingham City University, UK</p><p><a href="tel:+447884289573">+44 7884 289573</a><br><a href="mailto:sandeep.dhundhara2@bcu.ac.uk">sandeep.dhundhara2@bcu.ac.uk</a></p></div>
-      <div class="ccard"><h3>Mr. Ravi Sharma</h3><p class="role">Co-Convener · MAIT, Delhi</p><p><a href="tel:+919811387672">+91 98113 87672</a></p></div>
-      <div class="ccard"><h3>Dr. Mini Aggarwal</h3><p class="role">Organising Secretary · MAIT, Delhi</p><p><a href="tel:+918743891304">+91 87438 91304</a></p></div>
+      <div class="ccard"><span class="avatar ini md" style="--h:129" aria-hidden="true">NN</span><h3>Dr. Neelu Nagpal</h3><p class="role">Convener · MAIT, Delhi</p><p><a href="tel:+919811893230">+91 98118 93230</a><br><a href="mailto:neelunagpal@mait.ac.in">neelunagpal@mait.ac.in</a></p></div><div class="ccard"><span class="avatar ini md" style="--h:284" aria-hidden="true">SD</span><h3>Dr. Sandeep Dhundhara</h3><p class="role">Convener · Birmingham City University, UK</p><p><a href="tel:+447884289573">+44 7884 289573</a><br><a href="mailto:sandeep.dhundhara2@bcu.ac.uk">sandeep.dhundhara2@bcu.ac.uk</a></p></div><div class="ccard"><span class="avatar ini md" style="--h:35" aria-hidden="true">RS</span><h3>Mr. Ravi Sharma</h3><p class="role">Co-Convener · MAIT, Delhi</p><p><a href="tel:+919811387672">+91 98113 87672</a></p></div><div class="ccard"><span class="avatar ini md" style="--h:232" aria-hidden="true">MA</span><h3>Dr. Mini Aggarwal</h3><p class="role">Organising Secretary · MAIT, Delhi</p><p><a href="tel:+918743891304">+91 87438 91304</a></p></div>
     </div>
   </div>
 </section>
@@ -98,10 +107,21 @@
     </div>
   </div>
   <div class="wrap foot-base">
-    <span>Copyright © 2026 AIRCPES 2027. All rights reserved.</span>
+    <span>Copyright © 2026 AIRCPES 2027. All rights reserved. · Peer review managed via Microsoft CMT.</span>
     <span class="credits">Campus photographs via Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Campus_image.jpg" target="_blank" rel="noopener">Campus image</a> (Rohitjha424, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:The_beautiful_Library_of_MAIT.jpg" target="_blank" rel="noopener">The beautiful Library of MAIT</a> (Rohitjha424, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:MAIT_Administrative_Block.JPG" target="_blank" rel="noopener">MAIT Administrative Block</a> (Anujpathania, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:MAIT_Auditorium.JPG" target="_blank" rel="noopener">MAIT Auditorium</a> (Anujpathania, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:Mait9.jpg" target="_blank" rel="noopener">MAIT front</a> (HK2009, Public domain)</span>
   </div>
 </footer>
+<dialog class="modal" id="cmt-modal" aria-labelledby="cmt-title">
+  <div class="modal-head"><h3 id="cmt-title">Submit your paper via Microsoft CMT</h3><button type="button" class="icon-btn" data-close-cmt aria-label="Close">✕</button></div>
+  <p>Before submitting, please check that your manuscript meets the requirements:</p>
+  <ul class="check">
+    <li><b>Anonymised PDF</b> — no author names, affiliations or e-mails in the manuscript (double-blind review).</li>
+    <li><b>Length &amp; format</b> — maximum 8 pages, PDF, without page numbers or special headers/footers.</li>
+    <li><b>Originality</b> — unpublished work; Turnitin similarity index below 15%.</li>
+  </ul>
+  <div class="cmt-status" data-cmt-status>The Microsoft CMT submission link will be announced here shortly.</div>
+  <div class="modal-actions"><a class="btn solid" data-cmt-link href="#" target="_blank" rel="noopener" hidden>Go to Microsoft CMT ↗</a><a class="btn" href="submission.html">Full guidelines</a></div>
+</dialog>
 <button class="to-top" aria-label="Back to top">↑</button>
 <script src="site.js"></script>
 </body>

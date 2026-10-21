@@ -4,22 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AIRCPES 2027 — Registration</title>
-<meta name="description" content="Registration for AIRCPES 2027. At least one author of each accepted paper must register and present. Author registration deadline: 25 February 2027.">
+<meta name="description" content="Registration for AIRCPES 2027 through Microsoft CMT. At least one author of each accepted paper must register and present. Author registration deadline: 25 February 2027.">
 <meta name="theme-color" content="#0B2A5B">
 <link rel="canonical" href="https://www.aircpes.in/registration.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.aircpes.in/registration.html">
 <meta property="og:title" content="AIRCPES 2027 — Registration">
-<meta property="og:description" content="Registration for AIRCPES 2027. At least one author of each accepted paper must register and present. Author registration deadline: 25 February 2027.">
+<meta property="og:description" content="Registration for AIRCPES 2027 through Microsoft CMT. At least one author of each accepted paper must register and present. Author registration deadline: 25 February 2027.">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/50/Campus_image.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B2A5B'/%3E%3Cpath d='M36 8 18 36h12l-4 20 20-30H34z' fill='%23F2A93B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="announce">
+  <div class="wrap announce-row">
+    <span><span class="pill">Call for Papers Open</span> Paper submission deadline: <b>10 January 2027</b> · Submission via <b>Microsoft CMT</b></span>
+    <span class="announce-links"><a href="call-for-papers.html#dates">Important Dates</a><a href="submission.html">Guidelines</a><a href="contact.html">Contact</a></span>
+  </div>
+</div>
 <header class="masthead">
   <div class="wrap brandrow">
     <a class="brand" href="index.html" aria-label="AIRCPES 2027 home">
@@ -33,11 +41,15 @@
       <span class="sep"></span>
       <span class="pt springer"><b>Springer</b><small>Proceedings</small></span>
     </div>
+    <div class="head-actions">
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="btn solid sm" type="button" data-open-cmt>Submit Paper</button>
+    </div>
   </div>
   <nav class="mainnav" aria-label="Primary">
     <div class="wrap navrow">
       <button class="menu-btn" aria-expanded="false" aria-controls="navlinks">☰ Menu</button>
-      <div class="navlinks" id="navlinks"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="call-for-papers.html">Call for Paper</a><a href="submission.html">Submission</a><a href="committee.html">Committee</a><a href="registration.html" class="active" aria-current="page">Registration</a><a href="publication.html">Publication</a><a href="contact.html">Contact Us</a></div>
+      <div class="navlinks" id="navlinks"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="call-for-papers.html">Call for Paper</a><a href="submission.html">Submission</a><a href="committee.html">Committee</a><a href="speakers.html">Speakers</a><a href="registration.html" class="active" aria-current="page">Registration</a><a href="publication.html">Publication</a><a href="contact.html">Contact Us</a></div>
     </div>
   </nav>
 </header>
@@ -60,15 +72,22 @@
       <h2 class="h">Registrations</h2>
       <p class="strong">It is mandatory for at least one author of an accepted paper to register for the conference and present the paper; otherwise the paper will not be included in the proceedings.</p>
       <h3 class="h3">Registration Fee</h3>
+      <div class="seg" role="group" aria-label="Show fees for">
+        <button class="seg-btn active" type="button" data-cur="all">All</button>
+        <button class="seg-btn" type="button" data-cur="inr">Indian (₹ INR)</button>
+        <button class="seg-btn" type="button" data-cur="usd">Foreign ($ USD)</button>
+      </div>
+      <div class="table-scroll">
       <table class="fee">
-        <thead><tr><th>Category</th><th>Indian Participants (INR)</th><th>Foreign Participants (USD)</th></tr></thead>
+        <thead><tr><th>Category</th><th data-col="inr">Indian Participants (INR)</th><th data-col="usd">Foreign Participants (USD)</th></tr></thead>
         <tbody>
-          <tr><td>Academicians / Researchers (Author)</td><td>To be announced</td><td>To be announced</td></tr>
-          <tr><td>Students / Research Scholars (Author)</td><td>To be announced</td><td>To be announced</td></tr>
-          <tr><td>Industry Professionals (Author)</td><td>To be announced</td><td>To be announced</td></tr>
-          <tr><td>Attendees / Listeners</td><td>To be announced</td><td>To be announced</td></tr>
+          <tr><td>Academicians / Researchers (Author)</td><td data-col="inr">To be announced</td><td data-col="usd">To be announced</td></tr>
+          <tr><td>Students / Research Scholars (Author)</td><td data-col="inr">To be announced</td><td data-col="usd">To be announced</td></tr>
+          <tr><td>Industry Professionals (Author)</td><td data-col="inr">To be announced</td><td data-col="usd">To be announced</td></tr>
+          <tr><td>Attendees / Listeners</td><td data-col="inr">To be announced</td><td data-col="usd">To be announced</td></tr>
         </tbody>
       </table>
+      </div>
       <div class="notice">Registration will be done through <b>Microsoft CMT</b>. Registration fee, payment details and the CMT link will be published here soon. Last date of author registration: <b>25 February 2027</b>.</div>
       <h3 class="h3">Mode of Participation</h3>
       <p>The conference is held in <b>hybrid mode</b>, with parallel sessions at Maharaja Agrasen Institute of Technology, Delhi, India and Birmingham City University, UK. Details of in-person and online presentation will be shared with authors after acceptance.</p>
@@ -97,10 +116,21 @@
     </div>
   </div>
   <div class="wrap foot-base">
-    <span>Copyright © 2026 AIRCPES 2027. All rights reserved.</span>
+    <span>Copyright © 2026 AIRCPES 2027. All rights reserved. · Peer review managed via Microsoft CMT.</span>
     <span class="credits">Campus photographs via Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Campus_image.jpg" target="_blank" rel="noopener">Campus image</a> (Rohitjha424, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:The_beautiful_Library_of_MAIT.jpg" target="_blank" rel="noopener">The beautiful Library of MAIT</a> (Rohitjha424, CC BY-SA 4.0) · <a href="https://commons.wikimedia.org/wiki/File:MAIT_Administrative_Block.JPG" target="_blank" rel="noopener">MAIT Administrative Block</a> (Anujpathania, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:MAIT_Auditorium.JPG" target="_blank" rel="noopener">MAIT Auditorium</a> (Anujpathania, Public domain) · <a href="https://commons.wikimedia.org/wiki/File:Mait9.jpg" target="_blank" rel="noopener">MAIT front</a> (HK2009, Public domain)</span>
   </div>
 </footer>
+<dialog class="modal" id="cmt-modal" aria-labelledby="cmt-title">
+  <div class="modal-head"><h3 id="cmt-title">Submit your paper via Microsoft CMT</h3><button type="button" class="icon-btn" data-close-cmt aria-label="Close">✕</button></div>
+  <p>Before submitting, please check that your manuscript meets the requirements:</p>
+  <ul class="check">
+    <li><b>Anonymised PDF</b> — no author names, affiliations or e-mails in the manuscript (double-blind review).</li>
+    <li><b>Length &amp; format</b> — maximum 8 pages, PDF, without page numbers or special headers/footers.</li>
+    <li><b>Originality</b> — unpublished work; Turnitin similarity index below 15%.</li>
+  </ul>
+  <div class="cmt-status" data-cmt-status>The Microsoft CMT submission link will be announced here shortly.</div>
+  <div class="modal-actions"><a class="btn solid" data-cmt-link href="#" target="_blank" rel="noopener" hidden>Go to Microsoft CMT ↗</a><a class="btn" href="submission.html">Full guidelines</a></div>
+</dialog>
 <button class="to-top" aria-label="Back to top">↑</button>
 <script src="site.js"></script>
 </body>
