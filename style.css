@@ -50,7 +50,7 @@ img { max-width: 100%; display: block; }
 .titleblock .org b { color: var(--navy); }
 .titleblock .when { margin: 0; font-weight: 700; font-size: .98rem; display: inline-block; background: var(--navy); color: #fff; padding: 8px 18px; border-radius: 2px; }
 .banner { position: relative; height: clamp(220px, 38vw, 460px); overflow: hidden; background: var(--navy); }
-.banner-img { position: absolute; inset: 0; background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Campus_image.jpg') center 62% / cover no-repeat; }
+.banner-img { position: absolute; inset: 0; background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Campus_image.jpg') center 88% / cover no-repeat; }
 
 /* Sections */
 .sec { padding: 60px 0; }
