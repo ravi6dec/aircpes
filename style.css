@@ -312,3 +312,5 @@ img { max-width: 100%; display: block; }
   .icon-btn { width: 34px; height: 34px; }
   .brandrow { padding-top: 10px; padding-bottom: 10px; gap: 10px; }
 }
+.cmt-ack-foot { padding-bottom: 18px; }
+.cmt-ack-foot p { margin: 0; color: #DCE5F3; font-size: .86rem; line-height: 1.55; font-weight: 400; font-style: normal; }
