@@ -1,6 +1,6 @@
 /* AIRCPES 2027 — site behaviour.
    To publish the Microsoft CMT link, paste it between the quotes below. */
-var CMT_URL = "https://cmt3.research.microsoft.com/CMTSRM/Submission/Index";
+var CMT_URL = "https://cmt3.research.microsoft.com/AIRCPES2027/Submission/Index";
 
 (function () {
   var $ = function (s, r) { return (r || document).querySelector(s); };
