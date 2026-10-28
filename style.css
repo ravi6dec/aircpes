@@ -54,7 +54,7 @@ img { max-width: 100%; display: block; }
 .titleblock .org b { color: var(--head); }
 .titleblock .when { margin: 0; font-weight: 700; font-size: .98rem; display: inline-block; background: var(--navy); color: #fff; padding: 8px 18px; border-radius: 2px; }
 .banner { position: relative; height: clamp(220px, 38vw, 460px); overflow: hidden; background: var(--navy); }
-.banner-img { position: absolute; inset: 0; background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Campus_image.jpg') center 88% / cover no-repeat; }
+.banner-img { position: absolute; inset: 0; background: url('img/campus/mait-aerial.jpg') center 55% / cover no-repeat; }
 
 /* Sections */
 .sec { padding: 60px 0; }
@@ -314,3 +314,6 @@ img { max-width: 100%; display: block; }
 }
 .cmt-ack-foot { padding-bottom: 18px; }
 .cmt-ack-foot p { margin: 0; color: #DCE5F3; font-size: .86rem; line-height: 1.55; font-weight: 400; font-style: normal; }
+
+.mailbox { display: inline-block; margin: 0 0 16px; padding: 12px 16px; background: var(--tint); border: 1px solid var(--line); border-left: 4px solid var(--accent); font-size: .98rem; }
+.partners .springer b { font-family: 'Roboto Slab', serif; color: #E8761C; font-weight: 700; font-size: 1.15rem; }
