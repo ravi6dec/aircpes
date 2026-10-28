@@ -317,3 +317,34 @@ img { max-width: 100%; display: block; }
 
 .mailbox { display: inline-block; margin: 0 0 16px; padding: 12px 16px; background: var(--tint); border: 1px solid var(--line); border-left: 4px solid var(--accent); font-size: .98rem; }
 .partners .springer b { font-family: 'Roboto Slab', serif; color: #E8761C; font-weight: 700; font-size: 1.15rem; }
+
+/* Call for Reviewers */
+.cfr { background: linear-gradient(180deg, var(--bg), var(--tint)); }
+.cfr-title { text-align: center; font-size: clamp(1.8rem, 4.2vw, 3rem); font-weight: 700; color: var(--head); margin: 0 0 14px; line-height: 1.15; }
+.cfr-lede { text-align: center; max-width: 880px; margin: 0 auto 40px; color: var(--dim); font-size: 1.08rem; line-height: 1.6; }
+.cfr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+@media (max-width: 860px) { .cfr-grid { grid-template-columns: 1fr; gap: 22px; } }
+.cfr-card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 34px 34px 30px; box-shadow: 0 10px 30px rgba(11,42,91,.06); }
+.cfr-card.soft { background: #EEF4FF; border-color: #DCE7FB; }
+:root[data-theme="dark"] .cfr-card.soft { background: #15233A; border-color: #22385C; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cfr-card.soft { background: #15233A; border-color: #22385C; } }
+.cfr-card h3 { margin: 0 0 22px; font-size: 1.6rem; color: #1E3FA8; }
+:root[data-theme="dark"] .cfr-card h3, :root[data-theme="dark"] .cfr-box h4 { color: var(--head); }
+.cfr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.cfr-list li { background: var(--card); border-radius: 16px; padding: 18px 20px 18px 54px; position: relative; color: var(--text); box-shadow: 0 2px 8px rgba(11,42,91,.05); }
+.cfr-list li::before { content: "✓"; position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: #2747C8; font-weight: 700; font-size: 1.2rem; }
+.cfr-box { background: var(--tint); border-radius: 16px; padding: 20px 24px; margin-bottom: 18px; }
+.cfr-box:last-child { margin-bottom: 0; }
+.cfr-box h4 { margin: 0 0 8px; color: #1E3FA8; font-size: 1.15rem; }
+.cfr-box p { margin: 0 0 4px; color: var(--text); }
+.cfr-btn { display: inline-block; margin-top: 14px; background: #1E3A8A; color: #fff !important; text-decoration: none; font-weight: 700; padding: 14px 30px; border-radius: 999px; box-shadow: 0 6px 16px rgba(30,58,138,.3); transition: transform .15s, background .15s; }
+.cfr-btn:hover { background: #2747C8; transform: translateY(-2px); }
+.cfr-band { background: #EEF4FF; padding: 40px 0; }
+:root[data-theme="dark"] .cfr-band { background: #15233A; }
+.cfr-band-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.cfr-band h2 { margin: 0 0 6px; color: #1E3FA8; font-size: 1.6rem; }
+:root[data-theme="dark"] .cfr-band h2 { color: var(--head); }
+.cfr-band p { margin: 0; color: var(--text); max-width: 680px; }
+.cfr-band .cfr-btn { margin-top: 0; }
+@media (max-width: 1100px) { .navlinks a { padding-left: 10px; padding-right: 10px; letter-spacing: .05em; } }
+@media (min-width: 921px) { .navlinks { flex-wrap: nowrap; } .navlinks a { padding-left: 10px; padding-right: 10px; letter-spacing: .04em; font-size: .78rem; } }
